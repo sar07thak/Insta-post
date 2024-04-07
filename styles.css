@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  border: 2px solid;
+  height: 100vh;
+  background-image: url(background\ image.png);
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+.main-container {
+  height: 100%;
+  background-color: rgba(4, 4, 4, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post {
+  height: 80vh;
+  width: 64vw;
+  /* border: 1px solid coral; */
+  background-color: black;
+  display: flex;
+  opacity: 0.9;
+}
+.photo {
+  /* border: 1px solid yellow; */
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.photo > img {
+  height: 100%;
+  width: 99.8%;
+  /* position: absolute; */
+  z-index: -1;
+  transition: all 0.9s ease-in-out;
+  /* z-index: -1; */
+}
+.comments-section {
+  /* border: 1px solid aqua; */
+  height: 100%;
+  width: 50%;
+  color: white;
+}
+.vl {
+  border: 0.001em solid grey;
+  height: 100%;
+  width: 0;
+  opacity: 0.2;
+}
+.hl {
+  border: 0.001em solid grey;
+  height: 0%;
+  width: 100%;
+  opacity: 0.2;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  height: 9%;
+  align-items: center;
+  padding: 0.6em;
+}
+.name {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  /* gap: 0.2em; */
+}
+
+#check {
+  color: rgb(0, 183, 255);
+}
+.content {
+  height: 62%;
+  /* border: 1px solid yellow; */
+}
+.icons {
+  padding: 0.5em;
+  /* border: 1px solid coral; */
+}
+i {
+  /* background: transparent; */
+  /* border: 1px solid whitesmoke; */
+  font-size: 1.4em;
+}
+/* .date{
+    border: 1px solid crimson;
+} */
+.my-comment {
+  height: 26%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2em;
+}
+.icons :nth-child(4) {
+  transform: translateX(15em);
+}
+.date {
+  padding-left: 0.8em;
+}
+.date > p {
+  color: grey;
+}
+
+i {
+  /* border: 1px solid white; */
+  width: 1.5em;
+}
+.l {
+  padding: 0.5em;
+  color: grey;
+  /* border: 1px solid yellow; */
+}
+
+/* comment section  */
+.content {
+  overflow: hidden;
+}  
+
+.comment {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-detail {
+  gap: .7em;
+  display: flex;
+  align-items: center;
+}
+
+.time-line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+span {
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.logo {
+  
+  height: 100%;
+  width: 7%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 9em;
+}
+
+.time-line > p >span{
+  padding-left: .5em;
+}
+
+/* profile photos edit */
+.main{
+    border: .19em solid rgba(227, 38, 0, 0.926);
+}
+#check-small {
+  font-size: 1em;
+  color: rgb(0, 183, 255);
+}
