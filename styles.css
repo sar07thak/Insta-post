@@ -9,7 +9,7 @@
 .wrapper {
   border: 2px solid;
   height: 100vh;
-  background-image: url(background\ image.png);
+  background-image: url(./images/background\ image.png);
   position: relative;
   font-family: "Roboto", sans-serif;
 }
@@ -37,6 +37,7 @@
 
 img:hover {
   transform: scale(1.1);
+  transition-duration: 3s;
 }
 
 .photo > img {
@@ -128,7 +129,7 @@ i {
 
 /* comment section  */
 .content {
-  overflow: hidden;
+  overflow-y: scroll;
 }  
 
 .comment {
